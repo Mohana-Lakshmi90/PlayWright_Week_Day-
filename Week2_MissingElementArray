@@ -1,0 +1,13 @@
+//let arr=[1,2,3,5,6]
+//let  arr=[10,11,12,14,15]
+//let arr=[2,3,4,6,7,8]
+let arr=[20,21,23,24]
+let sorted=arr.sort((a,b)=> a-b)
+
+for(let i=0; i<sorted.length-1; i++)
+{
+ if (sorted[i] + 1 !== sorted[i + 1])
+ {
+        console.log("Missing Element:", sorted[i] + 1);
+ }
+}
